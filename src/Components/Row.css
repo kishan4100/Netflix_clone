@@ -1,0 +1,36 @@
+.row{
+   margin-left: 20px;
+}
+
+.row__images{
+   display: flex;
+   overflow-x: scroll;
+   overflow-y: hidden;
+   padding: 25px;
+}
+
+.row__images::-webkit-scrollbar{
+   display: none;
+}
+
+.row__image{
+   width: 100%;
+   object-fit: contain; 
+   height: 140px;
+   margin-right: 20px;
+   transition: transform 550ms;
+}
+
+.row__image:hover{
+   transform: scale(1.08);
+   
+}
+
+.row__largeimage{
+   height: 330px;
+   margin-right: 25px;
+}
+
+.row__largeimage:hover{
+   transform: scale(1.15);
+}
